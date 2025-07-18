@@ -1,8 +1,8 @@
 import { Box, Grid } from '@mui/material'
+import Button from "../button/Button";
 import React from 'react'
 import { 
   TextField, 
-  Button, 
   Typography, 
   Container,  
   Stack 
@@ -13,16 +13,14 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function Navbar() {
   return (
     <div>
-        <Grid 
+       <Grid
            sx={{
             bgcolor:'#003F62',
             height:'100px',            
             }}>
-
         </Grid>
-
-
-          <Container maxWidth="sm">
+    
+    <Container maxWidth="sm">
       <Box 
         sx={{ 
           minHeight: '100vh',
@@ -45,16 +43,7 @@ export default function Navbar() {
               // startAdornment: <SearchIcon color="action" />,
             }}
           />
-          <Button 
-            sx={{ 
-              width:"132px",
-              height:"56px" ,
-              borderRadius: "20px",
-              marginLeft:"-130px",
-              bgcolor:'#EDA415'}}
-          >
-            Search
-          </Button>
+          <Button/>
         </Stack>
       </Box>
     </Container>
